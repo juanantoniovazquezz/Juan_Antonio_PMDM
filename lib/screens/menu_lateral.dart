@@ -5,6 +5,10 @@ import 'pantalla_perfil.dart';
 import 'pantalla_miniaturas.dart';
 import 'pantalla_iconos.dart';
 import 'pantalla_columnas.dart';
+import 'pantalla_textos.dart';
+import 'pantalla_imagenes_repetidas.dart';
+import 'pantalla_responsive.dart';
+import 'pantalla_reto.dart';
 
 class MenuLateral extends StatelessWidget {
   const MenuLateral({super.key});
@@ -70,6 +74,51 @@ class MenuLateral extends StatelessWidget {
                 MaterialPageRoute(
                   builder: (context) => const PantallaColumnas(),
                 ),
+              );
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.text_fields),
+            title: const Text("6. Textos y fuentes"),
+            onTap: () {
+              Navigator.of(context).pop();
+              Navigator.of(context).push(
+                MaterialPageRoute(builder: (context) => const PantallaTextos()),
+              );
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.image),
+            title: const Text("7. Imágenes repetidas"),
+            onTap: () {
+              Navigator.of(context).pop();
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => const PantallaImagenesRepetidas(),
+                ),
+              );
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.devices),
+            title: const Text("8. Diseño responsive"),
+            onTap: () {
+              Navigator.of(context).pop();
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => const PantallaResponsive(),
+                ),
+              );
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.local_airport),
+            title: const Text('9. Reto Container'),
+            onTap: () {
+              Navigator.pop(context);
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const PantallaReto()),
               );
             },
           ),
