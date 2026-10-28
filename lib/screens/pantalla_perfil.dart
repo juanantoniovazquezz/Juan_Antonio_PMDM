@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'menu_lateral.dart';
+
 class PantallaPerfil extends StatelessWidget {
   const PantallaPerfil({super.key});
 
@@ -7,6 +9,7 @@ class PantallaPerfil extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text("Perfil")),
+      drawer: const MenuLateral(),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

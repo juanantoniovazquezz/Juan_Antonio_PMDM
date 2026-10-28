@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'menu_lateral.dart';
+
 class PantallaIconos extends StatelessWidget {
   const PantallaIconos({super.key});
 
@@ -7,6 +9,7 @@ class PantallaIconos extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text("5 Iconos en Fila")),
+      drawer: const MenuLateral(),
       body: Center(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'menu_lateral.dart';
+
 class PantallaColumnas extends StatelessWidget {
   const PantallaColumnas({super.key});
 
@@ -7,6 +9,7 @@ class PantallaColumnas extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text("5 Imágenes en Columna")),
+      drawer: const MenuLateral(),
       body: SingleChildScrollView(
         child: Center(
           child: Column(

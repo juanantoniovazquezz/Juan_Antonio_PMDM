@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'menu_lateral.dart';
+
 class PantallaMiniaturas extends StatelessWidget {
   const PantallaMiniaturas({super.key});
 
@@ -7,8 +9,9 @@ class PantallaMiniaturas extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text("3 Miniaturas")),
+      drawer: const MenuLateral(),
       body: Center(
-        child: Column(
+        child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Image.asset(

@@ -16,7 +16,7 @@ class PantallaDatos extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              "Juan Antonio Vázquez", // Cambia por tu nombre completo real
+              "Juan Antonio Vázquez",
               style: GoogleFonts.fuggles(
                 fontSize: 45,
                 fontWeight: FontWeight.bold,
@@ -25,10 +25,10 @@ class PantallaDatos extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             const Text(
-              "Repositorio GitHub:\nhttps://github.com",
+              "Repositorio GitHub:\nhttps://github.com/juanantoniovazquezz/Juan_Antonio_PMDM",
               textAlign: TextAlign.center,
               style: TextStyle(
-                fontFamily: 'Roboto', // Otro tipo de letra
+                fontFamily: 'Roboto',
                 fontSize: 16,
                 fontStyle: FontStyle.italic,
                 color: Colors.black54,
