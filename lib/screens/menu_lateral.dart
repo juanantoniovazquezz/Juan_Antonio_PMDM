@@ -9,6 +9,8 @@ import 'pantalla_textos.dart';
 import 'pantalla_imagenes_repetidas.dart';
 import 'pantalla_responsive.dart';
 import 'pantalla_reto.dart';
+import 'pantalla_contador.dart';
+import 'instagram/pantalla_instagram.dart';
 
 class MenuLateral extends StatelessWidget {
   const MenuLateral({super.key});
@@ -119,6 +121,32 @@ class MenuLateral extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => const PantallaReto()),
+              );
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.calculate),
+            title: const Text('10. Contador de clics'),
+            onTap: () {
+              Navigator.pop(context);
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const PantallaContador(),
+                ),
+              );
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.camera_alt),
+            title: const Text('11. Perfil de Instagram'),
+            onTap: () {
+              Navigator.pop(context);
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const PantallaInstagram(),
+                ),
               );
             },
           ),
